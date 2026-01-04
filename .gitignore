@@ -59,4 +59,5 @@ backend/nupkg/
 
 # User Secrets & Local Settings
 backend/appsettings.Local.json
+src/services/firebaseConfig.Local.js
 backend/Auth/Secrets/

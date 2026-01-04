@@ -5,15 +5,17 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBImfvbfG20_CTLaDFh06lriOq7OhxUh-s",
-  authDomain: "flowermarket-e119e.firebaseapp.com",
-  projectId: "flowermarket-e119e",
-  storageBucket: "flowermarket-e119e.firebasestorage.app",
-  messagingSenderId: "779365640886",
-  appId: "1:779365640886:web:94f97ac20f71462995d417",
-  measurementId: "G-1FJC9BDWM0"
+// Firebase configuration
+import { firebaseConfig as localConfig } from "./firebaseConfig.Local";
+
+const firebaseConfig = localConfig || {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID",
+  measurementId: "YOUR_MEASUREMENT_ID"
 };
 
 // Initialize Firebase
