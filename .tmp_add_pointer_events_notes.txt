@@ -1,1 +1,0 @@
-Temporary note: added style pointerEvents to overlay style objects in PrestataireDashboard, ProductModal, and client/orders to help with web pointerEvents deprecation and clickable issues. Remove this file after verification.
